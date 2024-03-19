@@ -1,50 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title><?= 'My Site!' ?></title>
- 
- <!-- Meta -->
- <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="">
- <meta name="author" content="">
- 
- <!-- Global CSS -->
- <link rel="stylesheet" href="assets/css/my-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo 'FruitBox'; ?></title>
+    <link rel="stylesheet" href="assets/css/my-styles.css"> 
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <!-- header -->
+<header>
+        <nav>
+            <div id="logo"><?php echo 'FruitBox'; ?></div>
+            <ul class="menu">
+                <li><a class="home-link" href="#"><?php echo 'Головна'; ?></a></li>
+                <li ><a class="home-link2" href="#"><?php echo 'Про нас'; ?></a></li>
+                <li ><a class="home-link2" href="#anchor-box"><?php echo 'Каталог'; ?></a></li>
+                <li ><a class="home-link2" href="#"><?php echo 'Доставка'; ?></a></li>
+            </ul>
+            <img class="image" src="img/research.png" alt="research">
+            <div class="search">
+                <input type="text" placeholder="  Пошук...">
+            </div>
+            <button class="order-now"><?php echo 'Замовити бокс'; ?></button>
+        </nav>
+    </header>
 
-<!-- ******HEADER****** -->
 
-<header id="header" class="header">
+    <div class="main-page"> 
+    <div class="wrapper">
+    <div class="main-page-left-side">
 
-<div class="nav-menu">
- <ul class="menu"> 
- <li class="link">Home Page</li>
- <li class="link">About Us</li>
- <li class="link">Contact Us</li>
- </ul>
+    <div class="main-page-text-container">
+<p class="main-page-text-hello">Найсмачніші фруктові бокси від компанії</p>
+
+<h1 class="main-page-text-title">FruitBox</h1>
+
+<p class="main-page-text-descr"> Кожен бокс - це ваш крок до здоров’я, наповнений свіжими, натуральними фруктами, які допоможуть вам відчути справжню свіжість природи щодня. 
+</p>
+<button class="main-page-btn" id="go-to-form-btn">
+    Замовити бокс
+</button>
+
+   </div>
+ </div> 
+
+    <img src="img/fruits.jpg" alt="Fruits">
+
+</div>
+  </div>
+    
+  <!-- boxes  -->
+    <div class="boxes">
+
+<h2 id="anchor-box" class="boxes-header">Пориньте у світ соковитих відкриттів з нашими фруктовими наборами!</h2>
+<p class="boxes-dscr">Наші фруктові бокси - це ідеальний спосіб насолодитися найсвіжішими та найсмачнішими фруктами, доставленими прямо до вашого порогу. Вибирайте з нашого різноманіття:</p>
+
+<div class="wrapper">
+<div class="boxes-item">
+   <img class="img-box1" src="img/boxSmall.png" alt="box 1">
+   <h3 class="boxes-item-title">Tropical Treasure</h3>
+   <p class="gus-fact-item-descr">Від ананасів бейбі до ківі Голд, кожен фрукт обраний за своєю унікальною смаковою якістю, бокс у розмірі small-round</p>
 </div>
 
+<div class="boxes-item">
+    <img class="img-box2" src="img/boxSmall2.png" alt="box 2">
+    <h3 class="boxes-item-title">Fruit Fantasia</h3>
+    <p class="boxes-item-descr">Бокс розміру small-box - зірка серед фруктових наборів, буде чудовим подарунком для справжніх цінителів</p>
+</div>
 
+<div class="boxes-item">
+    <img class="img-box3" src="img/boxMedium.png" alt="box 3">
+    <h3 class="boxes-item-title">Garden Gala</h3>
+    <p class="boxes-item-descr">Фруктовий бокс у розмірі medium-lux - розкішний вибір для тих, хто цінує різноманітність</p>
+</div>
 
+<div class="boxes-item">
+    <img class="img-box4" src="img/boxLarge.png" alt="box 4">
+    <h3 class="boxes-item-title">Melody Mix</h3>
+    <p class="boxes-item-descr">Цей бокс найбільшого розміру - premium-large включає в себе різноманіття екзотичних фруктів, які порадують кожного. </p>
+</div>
 
-</header>
+</div>
+</div>
 
-<!-- main content -->
-<main class="main content">
-</main>
+<div class="boxes">
 
-<!-- ******FOOTER****** -->
-<footer class="footer">
- <div class="container text-center">
- <small class="copyright"><?= 'Designed by Me!' ?></small>
- </div>
- <!--//container-->
+<h2 class="boxes-header2">Створіть незабутній подарунок з нашими тематичними фруктовими коробками!</h2>
+<p class="boxes-dscr2">Чи шукаєте ви ідеальний подарунок для коханої людини, чи хочете здивувати своїх батьків або дітей, наші коробки стануть чудовим вибором для будь-якої особливої нагоди.</p>
 
-</footer>
-<!--//footer-->
-<!-- Javascript -->
+<div class="wrapper">
+<div class="boxes-item">
+   <img class="img-box5" src="img/heartBox2.png" alt="box 5">
+   <h3 class="boxes-item-title">Ruby Rapture</h3>
+   <p class="gus-fact-item-descr">Подаруйте шматочок райського саду з нашою унікальною коробкою рубінового кольору у формі серця</p>
+</div>
+
+<div class="boxes-item">
+    <img class="img-box6" src="img/heartBox.png" alt="box 6">
+    <h3 class="boxes-item-title">Наповнення</h3>
+    <p class="boxes-item-descr">Манго, драконовий фрукт, освіжаюче ківі, солодкі зернята граната та яскраві цитрусові</p>
+</div>
+
+<div class="boxes-item">
+    <img class="img-box7" src="img/heartBox3.png" alt="box 7">
+    <h3 class="boxes-item-title">Наповнення</h3>
+    <p class="boxes-item-descr">Манго, драконовий фрукт, освіжаюче ківі, кумкват та солодке лічі</p>
+</div>
+
+<div class="boxes-item">
+    <img class="img-box8" src="img/heartBox4.png" alt="box 8">
+    <h3 class="boxes-item-title">Romantic Blossom</h3>
+    <p class="boxes-item-descr">Наша ексклюзивна коробка у формі серця, у неймовірно ніжному рожевому кольорі</p>
+</div>
+
+</div>
+</div>
+
+    <!-- form page -->
+    <div class="form-page">
+<form class="form"> 
+    <img src="img/email.png" alt="email">
+   <h4 class="form-title"> Поділіться, будь ласка, поштою</h4>
+<p class="form-descr">та отримайте консультацію </p>
+
+<div class="form-field">
+    <label for="user-name" class="form-lable">Ім'я</label>
+    <input type="text" class="form-input" id="user-name" name="Ім'я користувача">
+
+</div>
+
+<div class="form-field">
+    <label for="user-email" class="form-lable">Email</label>
+    <input type="email" class="form-input" id="user-email" name="Email користувача">
+
+</div>
+
+<button class="form-btn" >
+    Замовити бокс
+</button>
+
+</form>
+</div>
+
 </body>
+
 </html>
