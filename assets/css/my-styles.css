@@ -46,6 +46,14 @@ height: 64px;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    
+}
+.wrapper2 {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 18px;
 }
 
 .logo {
@@ -430,6 +438,7 @@ margin-top: 92px;
 .boxes-item {
     width: 374px;
     margin-bottom: 0;
+    
 }
 .text{
 color: rgb(27, 29, 31);
@@ -522,26 +531,4 @@ button:hover {
     background: linear-gradient(180.00deg, rgb(40, 99, 21), rgb(20, 107, 49) 100%);
 }
 
-/* CSS for large screens */
-@media (min-width: 1200px) {
-    .wrapper {
-        width: 80%;
-        margin: auto;
-    }
-}
 
-/* CSS for medium screens */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .wrapper {
-        width: 90%;
-        margin: auto;
-    }
-}
-
-/* CSS for small screens */
-@media (max-width: 767px) {
-    .wrapper {
-        width: 100%;
-        margin: auto;
-    }
-}
