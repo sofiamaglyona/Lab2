@@ -163,6 +163,118 @@ color: rgb(0, 0, 0);;
     padding-bottom: 80px;
 }
 
+/* about us */
+.img-1 {
+    margin-top: 52px;
+    width: 120px;
+    height: 150px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.img-2 {
+    margin-top: 52px;
+    width: 190px;
+    height: 150px;
+    margin-bottom: 38px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.img-3 {
+    margin-top: 52px;
+    width: 190px;
+    height: 150px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.about-us {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 100px;
+}
+
+.us-dscr {
+
+    color: rgb(27, 29, 31);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    width: 772px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 0px;
+
+}
+
+.us-header {
+    color: rgb(27, 29, 31);
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+
+.us-item-title {
+
+    color: rgb(27, 29, 31);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.us-item-descr {
+
+    color: rgb(27, 29, 31);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 52px;
+    width: 334px;
+    padding-left: 24px;
+}
+
+.us-item {
+    width: 374px;
+    margin-bottom: 0;
+}
+
+.text {
+    color: rgb(27, 29, 31);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    width: 580px;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+.us-item-title-sec{
+color: rgb(27, 29, 31);
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+
 /* boxes */
 
 .img-box1{
@@ -410,4 +522,26 @@ button:hover {
     background: linear-gradient(180.00deg, rgb(40, 99, 21), rgb(20, 107, 49) 100%);
 }
 
+/* CSS for large screens */
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 80%;
+        margin: auto;
+    }
+}
 
+/* CSS for medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* CSS for small screens */
+@media (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+        margin: auto;
+    }
+}
