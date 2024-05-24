@@ -41,106 +41,106 @@ body {
 }
 
 /* photos */
-.wrapper4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
+.wrapper4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
 }
 
-:root{
-    --index: calc(1vw + 1vh);
-    --transition: cubic-bezier(.1, .7, 0, 1);
+:root {
+  --index: calc(1vw + 1vh);
+  --transition: cubic-bezier(0.1, 0.7, 0, 1);
 }
-.items{
-    display: flex;
-    gap: 0.4rem;
-    perspective: calc(var(--index) * 35);
-}
-
-.item{
-    width: calc(var(--index) * 3);
-    height: calc(var(--index) * 12);
-    background-color: #222;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    filter: grayscale(1) brightness(.5);
-    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
-    will-change: transform, filter, rotateY, width;
+.items {
+  display: flex;
+  gap: 0.4rem;
+  perspective: calc(var(--index) * 35);
 }
 
-.item::before, .item::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 20px;
-    right: calc(var(--index) * -1);
+.item {
+  width: calc(var(--index) * 3);
+  height: calc(var(--index) * 12);
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  filter: grayscale(1) brightness(0.5);
+  transition: transform 1.25s var(--transition), filter 3s var(--transition),
+    width 1.25s var(--transition);
+  will-change: transform, filter, rotateY, width;
 }
 
-.item::after{
-    left: calc(var(--index) * -1);
+.item::before,
+.item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  right: calc(var(--index) * -1);
 }
 
-.items .item:hover{
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 10));
+.item::after {
+  left: calc(var(--index) * -1);
 }
 
-.items .item:hover + *{
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
-    z-index: -1;
+.items .item:hover {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 10));
 }
 
-.items .item:hover + * + *{
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
-    z-index: -2;
+.items .item:hover + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+  z-index: -1;
 }
 
-.items .item:hover + * + * + *{
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
-    z-index: -3;
+.items .item:hover + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+  z-index: -2;
 }
 
-.items .item:hover + * + * + * + *{
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
-    z-index: -4;
+.items .item:hover + * + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+  z-index: -3;
 }
 
-.items .item:has( + :hover){
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+.items .item:hover + * + * + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
+  z-index: -4;
 }
 
-.items .item:has( + * + :hover){
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+.items .item:has(+ :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
 }
 
-.items .item:has( + * + * + :hover){
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+.items .item:has(+ * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
 }
 
-.items .item:has( + * + * + * + :hover){
-    filter: inherit;
-    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+.items .item:has(+ * + * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
 }
 
-.items .item:active, .items .item:focus {
-	width: 28vw;
-	filter: inherit;
-	z-index: 100;
-	transform: translateZ(calc(var(--index) * 10));
-    margin: 0 .45vw;
+.items .item:has(+ * + * + * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
 }
 
-
-
+.items .item:active,
+.items .item:focus {
+  width: 28vw;
+  filter: inherit;
+  z-index: 100;
+  transform: translateZ(calc(var(--index) * 10));
+  margin: 0 0.45vw;
+}
 
 .wrapper {
   width: 1170px;
@@ -197,6 +197,7 @@ body {
 }
 
 /* header */
+
 header {
   background-color: #f8f9fa;
   padding: 20px;
@@ -246,9 +247,16 @@ nav {
   color: rgb(95, 184, 72);
   font-weight: bold;
 }
+.home-link:hover {
+  color: rgb(95, 184, 72);
+  font-weight: bold;
+}
 
 .home-link2 {
   color: rgb(0, 0, 0);
+}
+.home-link2:hover {
+  color: rgb(62, 175, 69);
 }
 .form-page {
   background: linear-gradient(
@@ -745,7 +753,7 @@ button:hover {
 }
 .ship-dscr-2 {
   color: rgb(27, 29, 31);
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 400;
   margin-right: 30px;
   text-align: right;
@@ -772,10 +780,10 @@ button:hover {
   border-radius: 1em;
   margin-top: -240px;
   margin-left: 60px;
-  width: 700px;
+  width: 650px;
   height: 450px;
   order: 1;
-  margin-right: 260px;
+  margin-right: 300px;
 }
 
 .result {
@@ -802,7 +810,7 @@ button:hover {
 .label2 {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
-  width: 274px;
+  width: 254px;
   text-align: right;
   margin-bottom: 20px;
 }
@@ -811,7 +819,7 @@ button:hover {
 input[type="submit"] {
   font-family: "Montserrat", sans-serif;
   font: 1em sans-serif;
-  width: 270px;
+  width: 240px;
   box-sizing: border-box;
   border: 1px solid #999;
   border-radius: 0.5em;
@@ -822,7 +830,8 @@ input[type="submit"] {
 
 .form2-inpt[type="submit"] {
   font-family: "Montserrat", sans-serif;
-  width: auto;
+  font-size: 14px;
+  width: 240px;
   padding: 0.5em;
   color: #ffffff;
   background: linear-gradient(180deg, rgb(100, 187, 71), rgb(44, 149, 83) 100%);
@@ -835,8 +844,8 @@ input[type="submit"] {
 
 #deliveryCost {
   font-family: "Montserrat", sans-serif;
-  margin-top: 1em;
-  font-size: 1.2em;
+  margin-top: 38px;
+  font-size: 16px;
   color: rgb(11, 11, 11);
   font-weight: 800;
 }

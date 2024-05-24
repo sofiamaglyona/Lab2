@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FruitBox</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="assets/css/my-styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,13 +40,30 @@
         <ul class="menu">
           <li><a class="home-link" href="#">Головна</a></li>
           <li><a class="home-link2" href="#anchor-location">Про нас</a></li>
-          <li><a class="home-link2" href="#anchor-box">Каталог</a></li>
-          <li><a class="home-link2" href="#anchor-shipping">Доставка</a></li>
+
+          <li style="cursor: pointer" class="dropdown">
+            <a class="home-link2 dropdown-toggle" data-toggle="dropdown"
+              >Каталог</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#anchor-box">Tropical Treasure</a>
+              <a class="dropdown-item" href="#anchor-box">Fruit Fantasia</a>
+              <a class="dropdown-item" href="#anchor-box">Garden Gala</a>
+              <a class="dropdown-item" href="#anchor-box">Melody Mix</a>
+              <a class="dropdown-item" href="#anchor-box2">Ruby Rapture</a>
+              <a class="dropdown-item" href="#anchor-box2">Romantic Blossom</a>
+            </div>
+          </li>
+
+          <li>
+            <a
+              style="margin-right: 180px"
+              class="home-link2"
+              href="#anchor-shipping"
+              >Доставка</a
+            >
+          </li>
         </ul>
-        <img class="image" src="img/research.png" alt="research" />
-        <div class="search">
-          <input type="text" placeholder="  Пошук..." />
-        </div>
       </nav>
     </header>
 
@@ -58,6 +93,109 @@
         </div>
 
         <img src="img/fruits.jpg" alt="Fruits" />
+      </div>
+    </div>
+
+    <div class="about-us">
+      <h2 id="anchor-location" class="us-header">
+        Чому люди обирають саме нас?
+      </h2>
+      <p class="us-dscr">
+        Бренд №1 в Україні з виготовлення фруктових подарунків
+      </p>
+
+      <div class="wrapper">
+        <div class="us-item">
+          <img class="img-1" src="img/pic1.png" alt="pic 1" />
+          <h3 class="us-item-title">Легко замовити</h3>
+          <p class="us-fact-item-descr">
+            Легко розмістіть онлайн-замовлення та отримайте їжу миттєво
+          </p>
+        </div>
+
+        <div class="us-item">
+          <img class="img-2" src="img/pic2.png" alt="pic 2" />
+          <h3 class="us-item-title">Розташування</h3>
+          <p class="us-item-descr">
+            Наші магазини є в кожному місті України, що дозврляє отримувати
+            замовлення швидко та зручно
+          </p>
+        </div>
+
+        <div class="us-item">
+          <img class="img-3" src="img/pic3.png" alt="pic 3" />
+          <h3 class="us-item-title">100% органічні фрукти</h3>
+          <p class="us-item-descr">
+            Органічні фрукти вирощуються без використання синтетичних хімікатів
+          </p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="us-item">
+          <h3 class="us-item-title-sec">25+</h3>
+          <p class="us-item-descr">Компаній-партнерів</p>
+        </div>
+
+        <div class="us-item">
+          <h3 class="us-item-title-sec">5к+</h3>
+          <p class="us-item-descr">Постійних клієнтів</p>
+        </div>
+
+        <div class="us-item">
+          <h3 class="us-item-title-sec">32к+</h3>
+          <p class="us-item-descr">Вже відправлених інтернет-замовлень</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- boxes  -->
+    <div class="boxes">
+      <h2 id="anchor-box" class="boxes-header">
+        Пориньте у світ соковитих відкриттів з нашими фруктовими наборами!
+      </h2>
+      <p class="boxes-dscr">
+        Наші фруктові бокси - це ідеальний спосіб насолодитися найсвіжішими та
+        найсмачнішими фруктами, доставленими прямо до вашого порогу. Вибирайте з
+        нашого різноманіття:
+      </p>
+
+      <div class="wrapper2">
+        <div class="boxes-item">
+          <img class="img-box1" src="img/boxSmall.png" alt="box 1" />
+          <h3 class="boxes-item-title" id="box1">Tropical Treasure</h3>
+          <p class="boxes-item-descr">
+            Від ананасів бейбі до ківі Голд, кожен фрукт обраний за своєю
+            унікальною смаковою якістю, бокс у розмірі small-round
+          </p>
+        </div>
+
+        <div class="boxes-item">
+          <img class="img-box2" src="img/boxSmall2.png" alt="box 2" />
+          <h3 class="boxes-item-title" id="box2">Fruit Fantasia</h3>
+          <p class="boxes-item-descr">
+            Бокс розміру small-box - зірка серед фруктових наборів, буде чудовим
+            подарунком для справжніх цінителів
+          </p>
+        </div>
+
+        <div class="boxes-item">
+          <img class="img-box3" src="img/boxMedium.png" alt="box 3" />
+          <h3 class="boxes-item-title" id="box3">Garden Gala</h3>
+          <p class="boxes-item-descr">
+            Фруктовий бокс у розмірі medium-lux - розкішний вибір для тих, хто
+            цінує різноманітність
+          </p>
+        </div>
+
+        <div class="boxes-item">
+          <img class="img-box4" src="img/boxLarge.png" alt="box 4" />
+          <h3 class="boxes-item-title" id="box4">Melody Mix</h3>
+          <p class="boxes-item-descr">
+            Цей бокс найбільшого розміру - premium-large включає в себе
+            різноманіття екзотичних фруктів, які порадують кожного.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -132,111 +270,8 @@
       </div>
     </div>
 
-    <div class="about-us">
-      <h2 id="anchor-location" class="us-header">
-        Чому люди обирають саме нас?
-      </h2>
-      <p class="us-dscr">
-        Бренд №1 в Україні з виготовлення фруктових подарунків
-      </p>
-
-      <div class="wrapper">
-        <div class="us-item">
-          <img class="img-1" src="img/pic1.png" alt="pic 1" />
-          <h3 class="us-item-title">Легко замовити</h3>
-          <p class="us-fact-item-descr">
-            Легко розмістіть онлайн-замовлення та отримайте їжу миттєво
-          </p>
-        </div>
-
-        <div class="us-item">
-          <img class="img-2" src="img/pic2.png" alt="pic 2" />
-          <h3 class="us-item-title">Розташування</h3>
-          <p class="us-item-descr">
-            Наші магазини є в кожному місті України, що дозврляє отримувати
-            замовлення швидко та зручно
-          </p>
-        </div>
-
-        <div class="us-item">
-          <img class="img-3" src="img/pic3.png" alt="pic 3" />
-          <h3 class="us-item-title">100% органічні фрукти</h3>
-          <p class="us-item-descr">
-            Органічні фрукти вирощуються без використання синтетичних хімікатів
-          </p>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="us-item">
-          <h3 class="us-item-title-sec">25+</h3>
-          <p class="us-item-descr">Компаній-партнерів</p>
-        </div>
-
-        <div class="us-item">
-          <h3 class="us-item-title-sec">5к+</h3>
-          <p class="us-item-descr">Постійних клієнтів</p>
-        </div>
-
-        <div class="us-item">
-          <h3 class="us-item-title-sec">32к+</h3>
-          <p class="us-item-descr">Вже відправлених інтернет-замовлень</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- boxes  -->
     <div class="boxes">
-      <h2 id="anchor-box" class="boxes-header">
-        Пориньте у світ соковитих відкриттів з нашими фруктовими наборами!
-      </h2>
-      <p class="boxes-dscr">
-        Наші фруктові бокси - це ідеальний спосіб насолодитися найсвіжішими та
-        найсмачнішими фруктами, доставленими прямо до вашого порогу. Вибирайте з
-        нашого різноманіття:
-      </p>
-
-      <div class="wrapper2">
-        <div class="boxes-item">
-          <img class="img-box1" src="img/boxSmall.png" alt="box 1" />
-          <h3 class="boxes-item-title">Tropical Treasure</h3>
-          <p class="boxes-item-descr">
-            Від ананасів бейбі до ківі Голд, кожен фрукт обраний за своєю
-            унікальною смаковою якістю, бокс у розмірі small-round
-          </p>
-        </div>
-
-        <div class="boxes-item">
-          <img class="img-box2" src="img/boxSmall2.png" alt="box 2" />
-          <h3 class="boxes-item-title">Fruit Fantasia</h3>
-          <p class="boxes-item-descr">
-            Бокс розміру small-box - зірка серед фруктових наборів, буде чудовим
-            подарунком для справжніх цінителів
-          </p>
-        </div>
-
-        <div class="boxes-item">
-          <img class="img-box3" src="img/boxMedium.png" alt="box 3" />
-          <h3 class="boxes-item-title">Garden Gala</h3>
-          <p class="boxes-item-descr">
-            Фруктовий бокс у розмірі medium-lux - розкішний вибір для тих, хто
-            цінує різноманітність
-          </p>
-        </div>
-
-        <div class="boxes-item">
-          <img class="img-box4" src="img/boxLarge.png" alt="box 4" />
-          <h3 class="boxes-item-title">Melody Mix</h3>
-          <p class="boxes-item-descr">
-            Цей бокс найбільшого розміру - premium-large включає в себе
-            різноманіття екзотичних фруктів, які порадують кожного.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="boxes">
-      <h2 class="boxes-header2">
+      <h2 id="anchor-box2"  class="boxes-header2">
         Створіть незабутній подарунок з нашими тематичними фруктовими коробками!
       </h2>
       <p class="boxes-dscr2">
@@ -248,7 +283,7 @@
       <div class="wrapper2">
         <div class="boxes-item">
           <img class="img-box5" src="img/heartBox2.png" alt="box 5" />
-          <h3 class="boxes-item-title">Ruby Rapture</h3>
+          <h3 class="boxes-item-title" id="box5">Ruby Rapture</h3>
           <p class="gus-fact-item-descr">
             Подаруйте шматочок райського саду з нашою унікальною коробкою
             рубінового кольору у формі серця
@@ -274,7 +309,7 @@
 
         <div class="boxes-item">
           <img class="img-box8" src="img/heartBox4.png" alt="box 8" />
-          <h3 class="boxes-item-title">Romantic Blossom</h3>
+          <h3 class="boxes-item-title" id="box6">Romantic Blossom</h3>
           <p class="boxes-item-descr">
             Наша ексклюзивна коробка у формі серця, у неймовірно ніжному
             рожевому кольорі
@@ -285,7 +320,7 @@
 
     <!-- shipping -->
 
-    <div class="wrapper-3" id="anchor-shipping">
+    <div style="margin-bottom: 100px" class="wrapper-3" id="anchor-shipping">
       <h2 class="ship-header">
         Ми пропонуємо зручні та швидкі варіанти доставки
       </h2>
@@ -294,17 +329,17 @@
         покупок для кожного клієнта.
       </p>
       <pre class="ship-dscr-3">
-    <strong>‣Стандартна доставка:</strong> Ваше замовлення буде доставлено протягом 3-4 робочих днів. Вартість 
-    стандартної доставки становить 80 грн. 
+    <strong>‣Стандартна доставка:</strong> Ваше замовлення буде доставлено протягом 3-4 робочих 
+    днів. Вартість стандартної доставки становить 80 грн. 
     
-    <strong>‣Експрес-доставка:</strong> Для тих, хто потребує швидкої доставки, ми пропонуємо експрес-опцію, 
-    доставка протягом 1-2 робочих днів. Вартість експрес-доставки тановить 250 грн.
+    <strong>‣Експрес-доставка:</strong> Для тих, хто потребує швидкої доставки, ми пропонуємо 
+    експрес-опцію, доставка протягом 1-2 робочих днів. Вартість експрес-доставки тановить 250 грн.
     
-    <strong>‣Міжнародна доставка:</strong> Ми також здійснюємо міжнародну доставку. Терміни та вартість міжнародної
-    доставки можуть варіюватися в залежності від країни отримувача.
+    <strong>‣Міжнародна доставка:</strong> Ми також здійснюємо міжнародну доставку. Терміни та 
+    вартість міжнародної доставки можуть варіюватися в залежності від країни отримувача.
     
-    <strong>‣Самовивіз:</strong> Якщо ви бажаєте особисто забрати своє замовлення, ви можете скористатися опцією 
-    самовивозу з нашого магазину або пункту видачі.
+    <strong>‣Самовивіз:</strong> Якщо ви бажаєте особисто забрати своє замовлення, ви можете 
+    скористатися опцією самовивозу з нашого магазину або пункту видачі.
 </pre>
       <div class="wrap-items-ship">
         <iframe
@@ -323,7 +358,7 @@
         </p>
 
         <form class="form2" id="deliveryForm">
-          <label class="label2" for="address"
+          <label style="margin-right: 20px" class="label2" for="address"
             >Введіть ваш поштовий індекс:</label
           ><br />
           <input
@@ -383,6 +418,23 @@
         © Copyright 2024 by fruit.box. All right reserved.
       </p>
     </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="scripts/main.js"></script>
   </body>
